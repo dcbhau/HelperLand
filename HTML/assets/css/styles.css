@@ -103,7 +103,7 @@ a .nav-link {
   border: 1px solid #ffffff80;
   border-radius: 20px;
   height: 40px;
-  padding: 0px 25px !important;
+  padding: 0px 25px;
   line-height: 38px;
   align-items: center;
   font-size: 16px;
@@ -270,7 +270,7 @@ input[type="text"] {
 }
 #footer {
   background-color: #111111;
-  padding: 30px 0;
+  padding: 30px 0 20px;
 }
 
 .footer-nav ul li {
@@ -393,5 +393,129 @@ input[type="text"] {
   .chat-bottom
   {
     display: none;
+  }
+}
+
+
+
+
+
+/*---------------------------------------------FAQs--------------------*/
+#faq
+{
+  padding-top:4rem ;
+  padding-bottom: 4rem;
+}
+#scroll2
+{
+  background-color: rgba(41, 41, 41, 0.8);
+}
+#faq h1
+{
+  position: relative;
+}
+#faq h1::after{
+  position: absolute;
+  content: "";
+  width: 148px;
+  height: 1px;
+  background-color: rgb(41, 41, 41);
+  left: 50%;
+  bottom: -20px;
+  transform: translate(-50%,0);
+}
+#faq h1::before{
+  position: absolute;
+  content: url(../images/forma-1-copy-5.png);
+  align-items: center;
+  height: 35px;
+  width: 48px;
+  padding: 0;
+  margin: 0;
+  background: white;
+  bottom: -30px;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%,0);
+}
+#faq .col-12 .btn
+{
+  background-color: #f6f6f6;
+  color: #646464;
+  border-bottom: 4px solid #1D7A8C;
+  height: 66px;
+  font-size: 24px;
+  width: 50%;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.btn:hover{
+  box-shadow: none ;
+}
+
+#faq .col-12 .nav-active
+{
+  color: White;
+  background-color: #1D7A8C;
+}
+
+.btn-link,.btn-link:hover
+{
+  color: #646464;
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.btn-link:focus
+{
+  box-shadow: none;
+  text-decoration: none;
+}
+#faq .card{
+  box-shadow: none;
+}
+#faq .card-header
+{
+  background-color: white;
+  border: none;
+  padding: 0 10px 0 0;
+  
+}
+#faq .card-body
+{
+  color: #646464;
+  font-size: 16px;
+  padding-left: 45px;
+  padding-right: 10px;
+}
+.btn-link div{
+  flex-wrap: wrap;
+}
+#service
+{
+  display: none;
+}
+#service,#customer,#left,#right
+{
+  transition: 0.5s ease-in-out ;
+}
+.nav-2
+{
+  background-color: #29626D;
+  padding-left:20px ;
+  padding-right:20px;
+}
+#faq img{
+  transform: rotateZ(-90deg);
+  transition: 0.3s ease-in-out;
+}
+@media (max-width:768px)
+{
+  #faq .col-12 .btn
+  {
+    height: 100px;
   }
 }
