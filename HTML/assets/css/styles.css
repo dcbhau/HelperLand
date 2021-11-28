@@ -508,6 +508,10 @@ input[type="text"] {
   padding-left:20px ;
   padding-right:20px;
 }
+.acordn
+{
+  margin-right: 10px;
+}
 #faq img{
   transform: rotateZ(-90deg);
   transition: 0.3s ease-in-out;
@@ -517,5 +521,12 @@ input[type="text"] {
   #faq .col-12 .btn
   {
     height: 100px;
+  }
+}
+@media (max-width:400px)
+{
+  #faq .col-12 .btn
+  {
+    height: 120px;
   }
 }
