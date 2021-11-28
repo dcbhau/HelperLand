@@ -10,6 +10,41 @@ body {
   font-size: 40px;
   font-weight: 600;
 }
+.heading2
+{
+  position: relative;
+  font-weight: 500;
+  font-size: 35.95px;
+  text-align: center;
+  color: #4F4F4F;
+  margin-bottom: 3rem;
+}
+.heading2::after
+{
+  position: absolute;
+  content: "";
+  width: 148px;
+  height: 1px;
+  background-color: #cccccc;
+  left: 50%;
+  bottom: -17px;
+  transform: translate(-50%,0);
+}
+.heading2::before
+{
+  position: absolute;
+  content: url(../images/forma-1-copy-5.png);
+  align-items: center;
+  height: 35px;
+  width: 48px;
+  padding: 0;
+  margin: 0;
+  background: white;
+  bottom: -30px;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%,0);
+}
 h3 {
   font-weight: 700;
 }
@@ -410,34 +445,6 @@ input[type="text"] {
 {
   background-color: rgba(41, 41, 41, 0.8);
 }
-#faq h1
-{
-  position: relative;
-}
-#faq h1::after{
-  position: absolute;
-  content: "";
-  width: 148px;
-  height: 1px;
-  background-color: rgb(41, 41, 41);
-  left: 50%;
-  bottom: -20px;
-  transform: translate(-50%,0);
-}
-#faq h1::before{
-  position: absolute;
-  content: url(../images/forma-1-copy-5.png);
-  align-items: center;
-  height: 35px;
-  width: 48px;
-  padding: 0;
-  margin: 0;
-  background: white;
-  bottom: -30px;
-  left: 50%;
-  z-index: 1;
-  transform: translate(-50%,0);
-}
 #faq .col-12 .btn
 {
   background-color: #f6f6f6;
@@ -529,4 +536,135 @@ input[type="text"] {
   {
     height: 120px;
   }
+}
+
+/*---------------------------------------------Prices--------------------*/
+#price,#contact,#about{
+  padding-top:4rem ;
+  padding-bottom: 4rem;
+}
+#price-card
+{
+  width: 553px;
+  text-align: center;
+  border-color:#B0C9CE;
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  box-shadow: none;
+  border-radius: 0 !important;
+}
+#price-card .card-header
+{
+  height: 59px;
+  background-color: #1D7A8C;
+  font-size: 28px;
+  color: white;
+  padding-top: 0;
+  font-weight: bold;
+  border-radius: 0;
+  line-height: 59px;
+}
+#price-card h2
+{
+  font-size: 48px;
+  color: #646464;
+}
+#price-card .card-body ul{
+  list-style-position: inside;
+  list-style-image:url(../images/forma-1_5.png);
+}
+#price-card .card-body
+{
+  padding-left: 20%;
+  padding-right:20% ;
+}
+#price-card .card-body li{
+ 
+  line-height: 24px;
+  color: #646464;
+  vertical-align: middle;
+}
+#price-card .card-body li::marker
+{
+  height:24px ;
+  width: 24px;
+}
+#ext
+{
+  border-top: 1px solid #dcdcdc;
+  margin: 4rem auto;
+  padding: 4rem 0;
+}
+.ext-service
+{
+  display: flex;
+  width: 90%;
+  max-width: 100%;
+  text-align: center;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.ext-service p
+{
+  margin: 0;
+}
+.img-con
+{
+  width: 108px;
+  height: 108px;
+  border-radius: 54px;
+  border: 1px solid #B0C9CE;
+  position: relative;
+  margin-bottom: 10px;
+}
+.img-con img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#cleaning_section
+{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #F6F6F6;
+}
+#cleaning_section .heading2::before
+{
+  background-color:#F6F6F6 ;
+}
+.cleaning-card
+{
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cleaning-card img{
+  width: 360px;
+  height: 210px;
+}
+.cleaning-card-body h5
+{ 
+  color: #4f4f4f;
+  margin: 1rem 0 0.5rem;
+}
+.cleaning-card-body ul
+{
+  list-style: none;
+  color: #4F4F4F;
+  padding-left: 0;
+}
+.cleaning-card-body ul li
+{
+  text-decoration: none;
+}
+#why1
+{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+#about p{
+  color: #646464;
 }
