@@ -688,7 +688,7 @@
               GET OUR NEWSLETTER
             </h5>
 
-            <input type="text" placeholder="YOUR EMAIL" name="email" />
+            <input type="text" placeholder="YOUR EMAIL" name="email" id="mail" />
             <button type="submit" class="btn-mail">Submit</button>
           </div>
         </div>
@@ -783,13 +783,16 @@
       //     )
       //     console.log($(this).children().find("img"));
       // })
-      $(".collapse")
+      $(document).ready(function()
+      {
+        $(".collapse")
         .on("shown.bs.collapse", function () {
           $(this).parent().find(".acordn").css("transform", "rotateZ(0deg)");
         })
         .on("hidden.bs.collapse", function () {
           $(this).parent().find(".acordn").css("transform", "rotateZ(-90deg)");
         });
+      })
     </script>
   </body>
 </html>

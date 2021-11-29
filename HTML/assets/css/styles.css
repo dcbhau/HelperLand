@@ -217,7 +217,7 @@ small {
   box-shadow: 0 0 30px #e4ebf0;
   padding: 2rem 1.8rem;
 }
-input[type="text"] {
+#mail {
   outline: none;
   border: 1px solid #565656;
   height: 40px;
@@ -245,7 +245,15 @@ input[type="text"] {
 .intro {
   display: flex;
 }
-
+.btn-pe,.btn-pe:hover
+{
+  color: white;
+  background-color: #1D7A8C;
+  border-radius:23px ;
+  height: 46px;
+  font-size: 20px;
+  padding:0 50px
+}
 /*testimonial*/
 
 .row1 {
@@ -411,6 +419,10 @@ input[type="text"] {
   .images3 img{
     width: 300px;
     height: 250px;
+  }
+  .btn-mail,#mail
+  {
+    margin-top: 10px;
   }
   #logo
   {
@@ -664,7 +676,82 @@ input[type="text"] {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
-
+#contact h3{
+  text-align: center;
+  color: #4F4F4F;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+#contact form .form-control{
+  border: 1px solid #C8C8C8;
+}
+#contact form ::placeholder,#contact select{
+  color: #A0A0A0;
+}
+#contact form .input-group-text{
+  background-color: rgba(160, 160, 160,0.2);
+}
 #about p{
   color: #646464;
+}
+.ser{
+  position: relative;
+  padding-left: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.ser::before
+{
+  content: url(../images/right-arrow.png);
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 0;
+}
+@media (max-width:1200px)
+{
+  .cleaning-card img
+  {
+    width: 300px;
+    height: 175px;
+  }
+}
+@media (max-width:992px)
+{
+  .cleaning-card img
+  {
+    width: 360px;
+    height: 210px;
+  }
+}
+@media (max-width:768px)
+{
+  .ext-service
+  {
+    flex: 1 1 49%;
+  }
+  .ext-service div{
+    flex-basis: 50%;
+  }
+  .img-con
+  {
+    margin: auto;
+  }
+  #price-card
+  {
+    width: 100%;
+  }
+ 
+}
+@media (max-width:400px)
+{
+   .cleaning-card ,.cleaning-card img
+  {
+    width: 100%;
+  }
+  #price-card .card-body
+{
+  padding-left: 5%;
+  padding-right:5% ;
+}
 }
