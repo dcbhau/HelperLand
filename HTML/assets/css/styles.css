@@ -3,7 +3,9 @@ body {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  
 }
+
 .heading {
   color: #4f4f4f;
   text-align: center;
@@ -72,11 +74,14 @@ h3 {
 
 /* home section */
 #home {
-  background: url("../images/Landing-Page-background-image.png") no-repeat;
+  /* background: url("../images/Landing-Page-background-image.png") no-repeat;
   background-attachment: fixed;
+ 
+  background-size: cover; */
+  background: rgba(52,52,52,0.5);
   padding-top: 9.7rem;
-  background-size: cover;
 }
+
 .dropdown-toggle::after {
   display: none;
 }

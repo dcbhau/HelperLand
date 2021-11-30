@@ -12,6 +12,7 @@ function scrollFunction() {
     document.getElementById("scroll").style.alignItems = "flex-start";
     document.getElementById("navbarNav").style.paddingTop = "0.7rem";
     document.getElementsByClassName("top-nav")[0].style.display = "inline";
+    document.getElementsByTagName("nav")[0].style.padding = "0 1rem"
   } else {
     document.getElementById("logo").style.height = "130px";
     document.getElementById("logo").style.width = "175px";
@@ -20,5 +21,6 @@ function scrollFunction() {
     document.getElementById("scroll").style.alignItems = "flex-start";
     document.getElementById("navbarNav").style.paddingTop = "35px";
     document.getElementsByClassName("top-nav")[0].style.display = "none";
+    document.getElementsByTagName("nav")[0].style.padding = "0.5rem 1rem"
   }
 }

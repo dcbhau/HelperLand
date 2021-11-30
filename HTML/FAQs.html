@@ -25,7 +25,7 @@
   <body>
     <header>
       <nav
-        class="navbar navbar-expand-xl fixed-top navbar-dark px-3"
+        class="navbar navbar-expand-xl fixed-top navbar-dark px-3 py-0"
         id="scroll2"
       >
         <a class="navbar-brand" href="./index.html">
@@ -112,7 +112,7 @@
                         type="button"
                         data-toggle="collapse"
                         data-target="#collapseOne"
-                        aria-expanded="true"
+                        aria-expanded="false"
                         aria-controls="collapseOne"
                       >
                         <div>
@@ -134,7 +134,7 @@
 
                   <div
                     id="collapseOne"
-                    class="collapse show"
+                    class="collapse"
                     aria-labelledby="headingOne"
                     data-parent="#accordionExample"
                   >
@@ -654,7 +654,7 @@
                   </div>
                   <div
                     id="collapseone"
-                    class="collapse show"
+                    class="collapse"
                     aria-labelledby="headingone"
                     data-parent="#accordionExample"
                   >
@@ -774,15 +774,6 @@
       });
     </script>
     <script>
-      var buttons = $(".btn-link");
-
-      // $(".btn-link").on('click',function()
-      // {
-      //     $(this).children().find("img").css(
-      //         "transform","rotateZ(0deg)"
-      //     )
-      //     console.log($(this).children().find("img"));
-      // })
       $(document).ready(function()
       {
         $(".collapse")
