@@ -617,8 +617,8 @@ footer {
 #ext
 {
   border-top: 1px solid #dcdcdc;
-  margin: 4rem auto;
-  padding: 4rem 0;
+  margin: 4rem auto 1rem;
+  padding: 4rem 0 1rem;
 }
 .ext-service
 {
@@ -697,6 +697,9 @@ footer {
 {
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+#why1 .row{
+  color: #646464;
 }
 #contact h3{
   text-align: center;
