@@ -3,9 +3,7 @@ body {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  
 }
-
 .heading {
   color: #4f4f4f;
   text-align: center;
@@ -25,7 +23,7 @@ body {
 {
   position: absolute;
   content: "";
-  width: 148px;
+  width: 162px;
   height: 1px;
   background-color: #cccccc;
   left: 50%;
@@ -47,12 +45,29 @@ body {
   z-index: 1;
   transform: translate(-50%,0);
 }
+.banner
+{
+  width: 100%;
+  padding-top: 4rem;
+}
 h3 {
   font-weight: 700;
 }
 .card {
   border: none;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.privacy
+{
+  font-size: 14px;
+  color: #9ba0a3;
+  text-align: center;
+  padding-top: 1rem;
+}
+.footer2
+{
+  border-bottom: 1px solid #424242;
+  padding-bottom: 1rem;
 }
 .top-nav {
   display: none;
@@ -74,10 +89,6 @@ h3 {
 
 /* home section */
 #home {
-  /* background: url("../images/Landing-Page-background-image.png") no-repeat;
-  background-attachment: fixed;
- 
-  background-size: cover; */
   background: rgba(52,52,52,0.5);
   padding-top: 9.7rem;
 }
@@ -196,7 +207,7 @@ a .nav-link {
 .images3 .row .align-self-center p {
   font-size: 18px;
 }
-small {
+small{
   font-size: 13px;
   color: #a3a3a3;
 }
@@ -222,7 +233,11 @@ small {
   box-shadow: 0 0 30px #e4ebf0;
   padding: 2rem 1.8rem;
 }
-#mail {
+.mail
+{
+  text-align: center;
+}
+.mail input{
   outline: none;
   border: 1px solid #565656;
   height: 40px;
@@ -231,7 +246,7 @@ small {
   background-color: #f4f5f8;
   padding-left: 20px;
 }
-.btn-mail {
+.mail button {
   color: white;
   background-color: #ff7b6d;
   border-radius: 20px;
@@ -310,13 +325,12 @@ small {
   line-height: 40px;
   padding: 0 37px;
   color: #4f4f4f;
-
   font-weight: 600;
   outline: none;
   border: none;
   border-radius: 20px;
 }
-#footer {
+footer {
   background-color: #111111;
   padding: 30px 0 20px;
 }
@@ -447,17 +461,7 @@ small {
     display: none;
   }
 }
-
-
-
-
-
 /*---------------------------------------------FAQs--------------------*/
-#faq
-{
-  padding-top:4rem ;
-  padding-bottom: 4rem;
-}
 #scroll2
 {
   background-color: rgba(41, 41, 41, 0.8);
@@ -556,7 +560,7 @@ small {
 }
 
 /*---------------------------------------------Prices--------------------*/
-#price,#contact,#about{
+.padding-section{
   padding-top:4rem ;
   padding-bottom: 4rem;
 }
@@ -606,6 +610,10 @@ small {
   height:24px ;
   width: 24px;
 }
+#price-card .card-body span{
+  font-size: 24px;
+  font-weight: normal;
+}
 #ext
 {
   border-top: 1px solid #dcdcdc;
@@ -625,6 +633,15 @@ small {
 .ext-service p
 {
   margin: 0;
+}
+.img-service p:nth-child(2)
+{
+  color: #646464;
+}
+.img-service p:nth-child(3)
+{
+  color: #1d7a8c;
+  font-size: 18px;
 }
 .img-con
 {
@@ -686,6 +703,10 @@ small {
   color: #4F4F4F;
   margin-top: 4rem;
   margin-bottom: 1rem;
+}
+#contact .row:nth-child(2)
+{
+  border-top: 1px solid #dcdcdc"
 }
 #contact form .form-control{
   border: 1px solid #C8C8C8;
@@ -750,13 +771,13 @@ small {
 }
 @media (max-width:400px)
 {
-   .cleaning-card ,.cleaning-card img
+  .cleaning-card ,.cleaning-card img
   {
     width: 100%;
   }
   #price-card .card-body
-{
-  padding-left: 5%;
-  padding-right:5% ;
-}
+  {
+    padding-left: 5%;
+    padding-right:5% ;
+  }
 }
